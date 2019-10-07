@@ -31,7 +31,8 @@ var data = [
         }
     }
 ]
- 
+
+//seeding the db with callback hell
 function seedDB(){
    //Remove all campgrounds
    Campground.deleteMany({}, function(err){
@@ -74,6 +75,7 @@ function seedDB(){
         })
     }); 
     //add a few comments
+	// nah, it's ok
 }
  
 module.exports = seedDB;
